@@ -1,0 +1,23 @@
+.general{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container{
+    border: 2px solid black;
+    width: 400px;
+    margin: 30px;
+    padding: 25px;
+}
+
+.view{
+    display: flex;
+    justify-content: space-between;
+}
+
+.GoBack{
+    background-color: blue;
+    color: aliceblue;
+    float: right;
+}

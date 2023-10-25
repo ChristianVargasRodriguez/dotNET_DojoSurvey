@@ -1,0 +1,45 @@
+.general{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    border: 2px solid black;
+    width: 400px;
+    margin: 30px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.formstyle{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.width1{
+    width: 123px;
+    border: 2px solid black;
+    
+}
+
+.width{
+    width: 130px;
+    border: 2px solid black;
+}
+
+.comment{
+    border: 2px solid black;
+    height: 50px;
+    width: 97%;
+    margin-top: 7px;
+    margin-bottom: 6px;
+}
+
+.submit{
+    background-color: blue;
+    color: aliceblue;
+    float: right;
+}

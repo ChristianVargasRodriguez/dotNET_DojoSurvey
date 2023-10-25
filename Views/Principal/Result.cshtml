@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Index</title>
+    <link rel="stylesheet" href="~/css/style2.css">
+</head>
+<body>
+    <div class="general">
+        <div class="container">
+            <h1>Submitted Info</h1>
+            <div class="view">
+                <p>Name:</p>
+                <p>@ViewBag.Name</p>
+            </div>
+            <div class="view">
+                <p>Dojo Location:</p>
+                <p>@ViewBag.Location</p>
+            </div>
+            <div class="view">
+                <p>Favorite Language:</p>
+                <p>@ViewBag.Languages</p>
+            </div>
+            <div class="view">
+                <p>Comment:</p>
+                <p>@ViewBag.Comment</p>
+            </div>
+        <button class="GoBack" onclick="window.location.href='/'">Go Back</button>
+        </div>
+    </div>
+</body>
+</html>

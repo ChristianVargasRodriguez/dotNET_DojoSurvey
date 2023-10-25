@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Index</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head> 
+<body>
+    <div class="general">
+        <div class="container">
+            <form action="/result" method="POST">
+                <div class="formstyle">
+                    <label for="name">Your Name</label>
+                    <input class="width1" type="text" id="name" name="name" required>
+                </div>
+                <div class="formstyle">
+                    <label for="location">Dojo Location</label>
+                    <select class="width" id="location" name="location">
+                        @{
+                            foreach(string location in ViewBag.Locations){
+                                <option value="@location">@location</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="formstyle">
+                    <label for="languages">Favorite Languages</label>
+                    <select class="width" id="languages" name="languages">
+                        @{
+                            foreach(string languages in ViewBag.Languages){
+                                <option value="@languages">@languages</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div>
+                    <label for="comment">Comment (optional)</label>
+                    <div>
+                        <textarea class="comment" id="comment" name="comment"></textarea>
+                    </div>
+                </div>
+            
+                <button class="submit">Submit</button>
+
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
